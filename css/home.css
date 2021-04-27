@@ -1,0 +1,58 @@
+
+body::-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+}
+
+#topbutton{
+    right:20px;
+    bottom: 20px;
+    position: fixed;
+    width:40px;
+    height:40px;
+    background-image: "top.png";
+}
+
+p{
+    color:blue
+}
+
+#tit {  
+    font-size: 30px ; 
+    color:#88179c;
+}
+
+
+.topnav { 
+    width: 50%;
+    margin:auto;
+    overflow : hidden;  
+    background-color:white;
+}
+
+.topnav a{
+     float: left;
+     color: lightslategray;
+     text-align: center;
+     text-decoration:none;
+     font-size: 20px;
+     padding: 5px  20px 5px 15px;
+
+      
+  }
+.topnav a:hover {
+     color: black;
+     background-color: #ecbeec;
+    
+}
+
+
+img1{
+ border: 10px solid gold;
+ padding : 5px;
+ box-shadow: 4px 4px black;
+ margin:100px;
+ opacity: 0.5;
+}
+

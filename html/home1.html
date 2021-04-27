@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home | Crystalog  </title>
+    <link rel="stylesheet" href="../css/home1.css">
+<style>
+
+
+
+
+
+
+</style>
+
+<script type = "text/javascript">
+    function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("img1").src = images[x];
+    }
+
+    function displayPreviousImage() {
+        x = (x <= 0) ? images.length - 1 : x - 1;
+        document.getElementById("img1").src = images[x];
+    }
+
+    function startTimer() {
+        setInterval(displayNextImage, 2500);
+    }
+
+    var images = [], x = -1;
+    images[0] = "../images/home1_1.jpg";
+    images[1] = "../images/home1_2.png";
+    images[2] = "../images/home1_3.jpg";
+    images[3] = "../images/home1_4.png";
+    images[4] = "../images/home1_5.png";
+
+</script>
+
+
+
+</head>
+<body onload = "startTimer()">
+
+  
+    
+   <div id="imgdd"> <img id="img1" src="../images/home1_1.jpg" alt="Crystals"/></div>
+
+   <button type="button" id="bprev" onclick="displayPreviousImage()"><</button>
+   <button type="button" id="bnext" onclick="displayNextImage()">></button>
+
+
+
+   <div id="outer1">
+        <img id="i1" src="../images/homeblog1.png" alt="blog1img">
+        <div id="i1text">
+            Crystals and minerals with trace amounts of lithium in their elemental makeup have a deeply relaxing, tranquil energy.
+            The minerals listed below all contain trace amounts of lithium and so
+             <a href="blogs/blog1.html" target="_blank">...see full blog</a>
+        </div>
+    </div>
+
+
+    <div id="outer1">
+        <img id="i1" src="../images/homeblog2.jpg" alt="blog1img">
+        <div id="i1text">
+            "How do I choose a crystal?" I am often asked this when at shows and my response is always the same, "You don't; the crystal chooses you."
+             <a href="blogs/blog2.html" target="_blank">...see full blog</a>
+        </div>
+    </div>
+
+    <div id="outer1">
+        <img id="i1" src="../images/homeblog3.png" alt="blog1img">
+        <div id="i1text">
+            Ascension is the enlightenment process, as we individually and collectively, together with Gaia ascend the limits of third dimensional reality and reclaim our multidimensional selves, activating our crystalline light body and awakening to 5D consciousness.
+             <a href="blogs/blog3.html" target="_blank">...see full blog</a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
